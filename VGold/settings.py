@@ -74,13 +74,24 @@ WSGI_APPLICATION = "VGold.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#       'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'gold_db',
+#         'USER': 'postgres',
+#         'PASSWORD': 'shekhar',
+#         'HOST': '127.0.0.1', 
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
-      'default': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Gold_Db',
+        'NAME': 'gold_db',
         'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'PASSWORD': 'Medicify@2024',
+        'HOST': '13.233.211.102',
         'PORT': '5432',
     }
 }
