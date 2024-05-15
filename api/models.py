@@ -631,3 +631,30 @@ class tblUserLoanDetails(models.Model):
     class Meta:
         
         db_table = 'tblUserLoanDetails'
+        
+        
+# class tblUserLoanDetails(models.Model):
+#     UserLoan_Id = models.AutoField(primary_key=True)
+#     LRUserId = models.ForeignKey(tblUsers, on_delete=models.SET_NULL, null=True, related_name='LRUserId')
+#     LRTransactionId = models.CharField( max_length=255, blank=True, null=True)
+#     LRAmount = models.FloatField(blank=True, null=True)
+#     LRStatus = models.IntegerField( blank=True, null=True)
+#     LRStatusOn = models.IntegerField( blank=True, null=True)
+#     LRComment = models.CharField( max_length=255, blank=True, null=True)
+#     LRAdminRemark = models.CharField( max_length=255, blank=True, null=True)
+#     LRPaymentMethod = models.IntegerField(db_comment="1: Cash, 2: Cheque, 3: BankTransfer, 4: UPI")
+#     LRPaymentDetails= models.CharField( max_length=255, blank=True, null=True)
+#     LRTransactionDetails = models.CharField( max_length=30, blank=True, null=True)
+#     LRTransactionOn = models.IntegerField( blank=True, null=True)
+    
+#     CreatedBy = models.ForeignKey(tblUsers, on_delete=models.SET_NULL, null=True, related_name='tblUserLoanDetails_CreatedBy')
+#     CreatedOn = models.IntegerField( blank=True, null=True)
+#     LastModifiedBy = models.ForeignKey(tblUsers, on_delete=models.SET_NULL, null=True, related_name='tblUserLoanDetails_LastModifiedBy')
+#     LastModifiedOn = models.IntegerField( blank=True, null=True)
+#     IsDeleted = models.IntegerField(default=0)
+#     DeletedOn = models.IntegerField( blank=True, null=True)
+#     DeletedBy = models.ForeignKey(tblUsers, on_delete=models.SET_NULL, null=True, related_name='tblUserLoanDetails_DeletedBy')
+
+#     class Meta:
+        
+#         db_table = 'tblUserLoanDetails'
